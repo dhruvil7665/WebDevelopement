@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>CleanNow</title>
+    <script>
+        <!--The following code is to perform form validation using JavaScript and alert box -->
+        function show_Alert() {
+
+             var name = document.getElementById("name").value;
+             var email = document.getElementById("email").value;
+             console.log("sd"+name)
+            if (name==""&&email=="") {
+                alert("Please fill out required fields");
+            }
+            else{
+                alert("Message Sent")
+            }
+            return;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <!--header is sticky so when page is scrolled it sticks to the top-->
+        <div class="navBarSmall">
+            <span class="navBarSmallSpan">Welcome To our Cleaning Company</span>
+            <span class="navBarSmallSpan2">Phone: +1 342 422 9029 &nbsp;Email: <a href="#" id="info">info@company.com</a></span>
+        </div>
+        <div class="navBarBig">
+            <p>CleanNow</p>
+            <nav class="navBarBigMenu">
+                <div>
+                    <a href="index.html">Home</a>
+                    <a href="index.html#aboutUS">About Us</a>
+                    <a href="index.html#cleaning">Services</a>
+                    <a href="index.html#proj">Our Works</a>
+                    <a href="index.html" class="navBarBigMenuA">Pages</a>
+                    <a href="index.html#blog">Blog</a>
+                    <a href="index.html#foot">Contact</a>
+                </div>
+            </nav>
+            <button class="requestQuoteButton">Request A Quote</button>
+        </div>
+
+    </header>
+    <section class="brandImageSection">
+        <!--In this section image is on top of a solid background and opacity is given to give exact look-->
+        <div class="opacityImage"></div>
+        <div class="brandImageSectionContentDiv">
+            <p>High quality cleaning services.better and faster cleaning solution!</p>
+            <p class="lorem">The phrasal sequence of the Lorem Ipsum text is now so widespread and commonplace that many DTP programmes can generate dummy test using the starting sequence</p>
+            <button class="getInTouchBtn"   >Get in touch with us</button>
+        </div>
+    </section>
+    <section class="whyChooseSection" >
+        <h1>Why Choose Us</h1>
+        <!--Nested divs to make a question mark with a square-->
+        <div class="whyChooseMainDiv">
+            <div class="outerDiv">
+                <div class="circleDiv">
+                    <div class="squareDiv">
+                        <div class="questionMarkDiv">&#63;</div>
+
+                    </div>
+                </div>
+                <h2>Pick a Time</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="outerDiv">
+                <div class="circleDiv">
+                    <div class="squareDiv">
+                        <div class="questionMarkDiv">&#63;</div>
+                    </div>
+                </div>
+                <h2>Book Instantly</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="outerDiv">
+                <div class="circleDiv">
+                    <div class="squareDiv">
+                        <div class="questionMarkDiv">&#63;</div>
+                    </div>
+                </div>
+                <h2>Your pro arrives</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+
+
+    </section>
+    <!--In this section grid-Layout is used with auto height-->
+    <span class="anchor" id="cleaning"></span>
+    <section class="cleaningServicesSection">
+    <div class="cleaningServices">
+        <div class="one">Cleaning Services</div>
+        <div class="two">
+            <h3>Residential Cleaning</h3>
+            <div class="image-cellOne"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="three">
+            <h3>Commercial Cleaning</h3>
+            <div class="image-cellOne"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="four">
+            <h3>Office Cleaning</h3>
+            <div class="image-cellOne"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="five">
+            <h3>Seasonal Cleaning</h3>
+            <div class="image-cellOne"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="six"><button class="moreServicesButton">More Services</button></div>
+    </div>
+    </section>
+    <span class="anchor" id="aboutUS"></span>
+    <section class="aboutCompanySection" >
+        <div class="aboutCompanyGrid">
+            <div class="about-cell-one">
+                <figure class="about-cell-one-fig"></figure>
+            </div>
+            <div class="about-cell-two">
+                <div class="cell-head">
+                    <i>Best Cleaning Company</i>
+                    <h4>About Company</h4>
+                    <p>We're ready to clean up your home,office,house or a warehouse with an astounding and acute precision</p>
+                </div>
+                <div class="smallGrid">
+                    <div class="smallOne">
+                        <div class="smallCellDiv2">
+                            <div class="questionMarkDiv2">&#63;</div>
+
+                        </div>
+                        <h3>We Know the Area</h3>
+                        <p>We insure you from not doing our jobs as good as we promise</p>
+
+                    </div>
+
+                    <div class="smallTwo">
+                        <div class="smallCellDiv3">
+                            <div class="questionMarkDiv3">&#63;</div>
+                        </div>
+                        <h3>Quality cleans every time</h3>
+                        <p>Our long history and regular clients prove that our service is qualified</p>
+                    </div>
+                    <div class="smallThree">
+                        <div class="smallCellDiv4">
+                            <div class="questionMarkDiv4">&#63;</div>
+                        </div>
+                        <h3>Highly-Trained Technicians</h3>
+                        <p>We insure you from not doing our jobs as good as we promise</p>
+                        <div class="moreinfo"><button class="moreinfobutton">More Info</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="offer">
+        <h1>Want to get 20% off? Save the time and money?</h1>
+        <button class="moreServicesButtonWhite">More Services</button>
+    </section>
+    <section class="ourTeamSection">
+        <h1>Meet Our Team</h1>
+        <div class="whyChooseMainDiv">
+            <div class="outerDiv">
+                <div class="teamCircleDiv1">
+                </div>
+                <h2 class="teamH2">James Cawdale</h2>
+                <p class="teamH2">Office Cleaner</p>
+                <div class="smallQGrid">
+                    <div class="cell-Q-1">&#63;</div>
+                    <div class="cell-Q-2">&#63;</div>
+                    <div class="cell-Q-3">&#63;</div>
+                    <div class="cell-Q-4">&#63;</div>
+                </div>
+            </div>
+            <div class="outerDiv">
+                <div class="teamCircleDiv2">
+                </div>
+                <h2 class="teamH2">Joseph Doe</h2>
+                <p class="teamH2">Office Cleaner</p>
+                <div class="smallQGrid">
+                    <!--Used grid layout to make the 4 small question marks-->
+                    <div class="cell-Q-1">&#63;</div>
+                    <div class="cell-Q-2">&#63;</div>
+                    <div class="cell-Q-3">&#63;</div>
+                    <div class="cell-Q-4">&#63;</div>
+                </div>
+            </div>
+            <div class="outerDiv">
+                <div class="teamCircleDiv3">
+                </div>
+                <h2>Diana Mason</h2>
+                <p class="teamH2">Office Cleaner</p>
+                <div class="smallQGrid">
+                    <div class="cell-Q-1">&#63;</div>
+                    <div class="cell-Q-2">&#63;</div>
+                    <div class="cell-Q-3">&#63;</div>
+                    <div class="cell-Q-4">&#63;</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricingSection">
+        <h1>Pricing Tables</h1>
+        <div class="pricingGrid">
+            <!--This is pricing grid in which all elements are relative-->
+            <div class="pricingCell1">
+                <div class="pricingCellSquare">
+                    <!--Following Div is to create a question mark-->
+                <div class="pricingCellQuestion">&#63;</div>
+                </div>
+                <h3>Office Cleaning</h3>
+                <hr>
+                <h1>$120</h1>
+                <h4>Per Month</h4>
+                <p>Cleaning floors<br>Clean windows<br>Clean the walls<br>Organization of furniture<br>Home Services
+                </p>
+                <!--Buy now button with click effect-->
+                <div class="buyNowDiv"><button class="buyNowButton">Buy Now</button></div>
+            </div>
+            <div class="pricingCell2">
+                <div class="pricingCellSquare2">
+                    <div class="pricingCellQuestion2">&#63;</div>
+                </div>
+                <h3>Home Cleaning</h3>
+                <hr>
+                <h1>$120</h1>
+                <h4>Per Month</h4>
+                <p>Cleaning floors<br>Clean windows<br>Clean the walls<br>Organization of furniture<br>Home Services
+                </p>
+                <div class="buyNowDiv"><button class="buyNowButton">Buy Now</button></div>
+            </div>
+            <div class="pricingCell3"><div class="pricingCellSquare3">
+                <div class="pricingCellQuestion3">&#63;</div>
+            </div>
+                <h3>Carpet Cleaning</h3>
+                <hr>
+                <h1>$120</h1>
+                <h4>Per Month</h4>
+                <p>Cleaning floors<br>Clean windows<br>Clean the walls<br>Organization of furniture<br>Home Services
+                </p>
+                <div class="buyNowDiv"><button class="buyNowButton">Buy Now</button></div>
+            </div>
+            <div class="pricingCell4">
+                <div class="pricingCellSquare4">
+                    <div class="pricingCellQuestion4">&#63;</div>
+                </div>
+                <h3>Apartment Cleaning</h3>
+                <hr>
+                <h1>$120</h1>
+                <h4>Per Month</h4>
+                <p>Cleaning floors<br>Clean windows<br>Clean the walls<br>Organization of furniture<br>Home Services
+                </p>
+                <div class="buyNowDiv"><button class="buyNowButton">Buy Now</button></div>
+            </div>
+        </div>
+
+    </section>
+    <span class="anchor" id="blog"></span>
+    <section class="latestBlogSection">
+        <h1>Latest Blog</h1>
+        <div class="latestBlogGrid">
+            <div class="latestBlogcell1">
+                <div class="imageDiv"></div>
+                <small>03 Nov,2018</small>
+                <h4>The best things you can do for your furniture</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="greyCircle"></div>
+                <span>By: <b><i>John Doe</i></b></span>
+            </div>
+            <div class="latestBlogcell2">
+                <div class="imageDiv"></div>
+                <small>03 Nov,2018</small>
+                <h4>The best things you can do for your furniture</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="greyCircle"></div>
+                <span>By: <b><i>John Doe</i></b></span>
+            </div>
+            <div class="latestBlogcell3">
+                <div class="imageDiv"></div>
+                <small>03 Nov,2018</small>
+                <h4>The best things you can do for your furniture</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="greyCircle"></div>
+                <span>By: <b><i>John Doe</i></b></span>
+            </div>
+        </div>
+    </section>
+    <section class="testimonialSection">
+        <h1>Testimonials</h1>
+        <div class="oneCircle"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="founder">John Doe, CEO Founder, Company</div>
+    </section>
+    <section class="projectSection" id="proj">
+        <h1>Our Projects</h1>
+        <div class="slider">
+             <div class="sliderInsideOne"></div>
+             <div class="sliderInsideTwo"></div>
+             <div class="sliderInsideThree"></div>
+             <div class="sliderInsideFour"></div>
+        </div>
+        <div class="instantParent">
+            <div class="instant">
+
+            </div>
+
+            <div class="quote">
+                <h3>Get An Instant Quote</h3>
+                <!--Created form to get an instant quote with form validation usin javascript-->
+                <form>
+                <input type="text" name="name" id="name" placeholder="Your Name *" required class="nameBox">
+                <input type="email" name="email" id="email" placeholder="Your Email *"  required class="emailBox">
+                <input type="number" name="phone" placeholder="Phone" class="phoneBox">
+                <input type="text" name="message" placeholder="Message" class="messageBox">
+                    <div class="buyNowDiv"><button class="yourMessageBtn" type="submit" onclick="show_Alert()" >Send Message</button></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer id="foot">
+        <div class="mainfoot">
+        <div class="foot1">
+            <h1>CleanNow</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>© Copyright 2018 <b>CleanNow</b>, All Right Reserved</p>
+        </div>
+        <div class="foot2">
+            <h3>Quick View</h3>
+            <p><a href="index.html">Home</a><br><a href="index.html#aboutUS">About</a><br><a href="index.html#cleaning">Services</a><br><a href="index.html#proj">Projects</a><br><a href="index.html#quo">Quote</a></p>
+        </div>
+        <div class="foot3"><h3>Services</h3>
+            <p>Commercial Cleaning<br>House Cleaning<br>Office Cleaning<br>Glass Cleaning<br>Window Cleaning</p></div>
+        <div class="foot4">
+            <h3>Contact Us</h3>
+            <p>Phone: +1 234 567 9332<br>Email: info@company.com<br>Fax: +1 342 422 5314</p>
+            <div class="smallQGridFoot">
+                <div class="foot-Q-1">&#63;</div>
+                <div class="foot-Q-2">&#63;</div>
+                <div class="foot-Q-3">&#63;</div>
+                <div class="foot-Q-4">&#63;</div>
+                <div class="foot-Q-5">&#63;</div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+
+
+</html>

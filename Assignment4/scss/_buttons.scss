@@ -1,0 +1,124 @@
+//This page is to style all the buttons in the webpage
+@import "variables";
+.getInTouchBtn{
+  border-radius: 20px;
+  border: 0;
+  height: 11%;
+  width:34%;
+  color: $basicLogoColor;
+  font-weight: bold;
+  cursor:pointer;
+  background-color: white;
+}
+.requestQuoteButton{
+  width: 11%;
+  float: left;
+  height: 50px;
+  border-radius: 29px;
+  border: 0;
+  margin-top: 15px;
+  background-color: $basicLogoColor;
+  position: relative;
+  font-family: $fontSan;
+  color: white;
+  //
+  cursor:pointer;
+}
+.moreServicesButton{
+  width: 14%;
+  height: 50px;
+  border-radius: 29px;
+  border: 0;
+  background-color: $basicLogoColor;
+  left:42%;
+  position: absolute;
+  font-family: $fontSan;
+  color: white;
+  cursor:pointer;
+}
+
+.moreinfobutton{
+  width: 34%;
+  margin-top: 30px;
+  height: 40px;
+  border-radius: 29px;
+  border: 0;
+  background-color: $basicLogoColor;
+  position: absolute;
+  font-family: $fontSan;
+  color: white;
+  cursor:pointer;
+}
+
+.moreServicesButtonWhite{
+  width: 14%;
+  height: 50px;
+  border-radius: 29px;
+  border: 0;
+  background-color: white;
+  left:42%;
+  position: absolute;
+  font-family: $fontSan;
+  color: $basicLogoColor;
+  float: left;
+  margin-left: 320px;
+  margin-top: 58px;
+  cursor:pointer;
+}
+
+.buyNowButton{
+  width: 215px;
+  height: 37px;
+
+  border: 0;
+  background-color: $basicLogoColor;
+  top:360px;
+  position: absolute;
+  font-family: $fontSan;
+  color: white;
+  float: left;
+  cursor:pointer;
+
+}
+
+.yourMessageBtn{
+  width: 80%;
+  height: 37px;
+  border: 0;
+  background-color: $basicLogoColor;
+  top:420px;
+  margin-left:30px;
+  margin-top: 20px;
+  font-family: $fontSan;
+  color: white;
+  font-weight: bold;
+  cursor:pointer;
+  float: left;
+
+}
+
+//following code is to use give box shadow to all the buttons
+.yourMessageBtn:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.buyNowButton:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.getInTouchBtn:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.moreinfobutton:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.requestQuoteButton:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

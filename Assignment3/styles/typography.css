@@ -1,0 +1,22 @@
+/*font face used to give customized font*/
+@font-face {
+    font-family: 'headerFont';
+    src: url(fonts/righteous/Righteous-Regular.ttf);
+}
+
+h1{
+    font-family: 'headerFont';
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+h3{
+    font-size: 19px;
+    font-weight: unset;
+    margin-top: 12px;
+    font-family: Gotham A,Gotham B,sans-serif;
+}
+.divHeadFont {
+    font-family: Gotham A, Gotham B, sans-serif;
+}
+

@@ -1,0 +1,101 @@
+[
+  {
+    "name": "quickSort",
+    "filePath": "src/main.js",
+    "lines": [
+      {
+        "lineNumber": 110,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 111,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 112,
+        "line": " * @param a{number[]} of type {Array} that needs to be sorted\r"
+      },
+      {
+        "lineNumber": 113,
+        "line": " * @param first of type {Number} that is the first index of array\r"
+      },
+      {
+        "lineNumber": 114,
+        "line": " * @param last of type {Number} that is the last index of array\r"
+      },
+      {
+        "lineNumber": 115,
+        "line": " * @function quickSort is a recursive function that sorts a given array by divide and conquer method\r"
+      },
+      {
+        "lineNumber": 116,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 117,
+        "line": "function quickSort(a,first,last){\r"
+      }
+    ],
+    "codeParams": [
+      "a",
+      "first",
+      "last"
+    ],
+    "docParams": [
+      "first",
+      "last"
+    ]
+  },
+  {
+    "name": "part",
+    "filePath": "src/main.js",
+    "lines": [
+      {
+        "lineNumber": 127,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 128,
+        "line": " *@function part is a function that gets the partition index by sorting array on the left and right side of the pivot\r"
+      },
+      {
+        "lineNumber": 129,
+        "line": " * @param {Array} ARRAY TO SORT USING QUICK SORT\r"
+      },
+      {
+        "lineNumber": 130,
+        "line": " * @param first{Number} FIRST INDEX OF THE ARRAY\r"
+      },
+      {
+        "lineNumber": 131,
+        "line": " * @param last of type {Number} LAST INDEX OF THE ARRAY\r"
+      },
+      {
+        "lineNumber": 132,
+        "line": " * @returns {Number} RETURNS PARTITION INDEX\r"
+      },
+      {
+        "lineNumber": 133,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 134,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 135,
+        "line": "function part(a,first,last){\r"
+      }
+    ],
+    "codeParams": [
+      "a",
+      "first",
+      "last"
+    ],
+    "docParams": [
+      "ARRAY",
+      "first{Number}",
+      "last"
+    ]
+  }
+]

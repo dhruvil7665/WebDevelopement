@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <!--meta data added to optimize website for Search engine-->
+    <meta name="description" content="Information on SSN page5">
+    <meta name="keywords" content="SSN,Application,application form for ssn,form,Form for SSN">
+    <meta name="author" content="Dhruvil Shah">
+    <title>SSN_page5</title>
+    <!--basic css styling given-->
+    <style>
+        .mainDiv{
+            margin-left: 15%;
+            width: 70%;
+            padding-top: 1%;
+            padding-bottom: 2%;
+            background:white;}
+        .foot{
+            float:left;
+            position: relative;
+            width: 50%;}
+    </style>
+    <script>
+        window.onload = function() {
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            var can = document.getElementById("myFile").value;
+            var img = new Image()
+            img.src = can;
+            ctx.drawImage(img, 20, 20);
+        }
+    </script>
+</head>
+
+<body bgcolor="#808080">
+<div class="mainDiv">
+
+    <div style="width: 100%; margin-left: 20px;">
+    <div style="width: 50%; float: left;">
+        <h2 style="margin: unset;">SOCIAL SECURITY ADMINISTRATION<br>Application for a Social Security Card</h2>
+    </div>
+    <div style="width: 50%; height: 54.4px; margin-bottom:8px;float: left; position: relative;">
+        <h4 style="margin-left: 348px;">Form Approved<br>OMB NO. 0960-0066</h4>
+    </div>
+    </div>
+    <br>
+    <hr style=" margin-left:20px; margin-right:20px;height: 4px; background: black;">
+
+    <form method="post" action="">
+        <!--using fieldset tag to display elements of the form-->
+        <fieldset style="border-color: cadetblue">
+            <legend><h2>1</h2></legend>
+                <fieldset style="border-color: cadetblue">
+
+                    <h2>Name</h2>
+                    <label>First</label>
+                    <!--spellcheck and required attributes in input tag used for validation-->
+                    <input size="35" type="text" spellcheck="true" required name="First">
+                    <label>Full Middle Name</label>
+                    <input size="35" type="text" spellcheck="true" required name="fullMiddlename1">
+                    <label>Last</label>
+                    <input  size="35" type="text" spellcheck="true" required name="Last">
+                </fieldset>
+                <fieldset style="border-color: cadetblue">
+                    <h2>FULL NAME AT BIRTH IF OTHER THAN BEFORE</h2>
+                    <label>First</label>
+                    <input size="35" type="text" spellcheck="true"  name="First">
+                    <label>Full Middle Name</label>
+                    <input size="35" type="text" spellcheck="true" name="fullMiddleName2">
+                    <label>Last</label>
+                    <input  size="35" type="text" spellcheck="true" name="Last1">
+                </fieldset>
+                <fieldset style="border-color: cadetblue">
+
+                    <h2>OTHER NAMES USED</h2>
+
+                    <input  size="100" type="text" spellcheck="true" name="Other">
+                </fieldset>
+        </fieldset>
+        <fieldset style="border-color: cadetblue">
+            <legend><h2>2</h2></legend>
+                <fieldset style="border-color: cadetblue; width: 35%; float: left;">
+                    <h4>Social Security number previously assigned to the person listed in item 1</h4>
+                </fieldset>
+                <fieldset style="border-color: cadetblue; width: 55%; height:50px;float: left;">
+                    <input type="number" name="field1" min="0" max="9"/><input type="number" name="field2" min="0" max="9"/><input type="number" name="field3" min="0" max="9"/> <b>-</b>
+                    <input type="number" name="field4" min="0" max="9"/><input type="number" name="field5" min="0" max="9"/> <b>-</b>
+                    <input type="number" name="field6" min="0" max="9"/><input type="number" name="field7" min="0" max="9"/><input type="number" name="field8" min="0" max="9"/><input type="number" name="field9" min="0" max="9"/>
+                </fieldset>
+        </fieldset>
+        <fieldset style="border-color: cadetblue ;">
+            <legend><h2>3</h2></legend>
+            <fieldset style="border-color: cadetblue;  float: left;">
+                <h3 style="margin-bottom: 0px;">Place of Birth</h3><br><small>(Do not abbreviate)</small>
+                <label>City</label>
+                <input size="15" type="text" spellcheck="true" required name="City">
+                <label>State or Foreign Country</label>
+                <input size="15" type="text" spellcheck="true" required name="State">
+                <label>FCI</label>
+                <input size="15" type="text" disabled value="Office Use Only" name="FCI">
+            </fieldset>
+        </fieldset>
+        <fieldset style="border-color: cadetblue ;">
+            <legend><h2>4</h2></legend>
+            <fieldset style="border-color: cadetblue; width: 70%; float: left;">
+                <h3 style="margin-bottom: 0px;">DATE OF BIRTH</h3>
+                <label>MM/DD/YYYY</label>
+                <input size="15" type="date"  required name="date">
+            </fieldset>
+        </fieldset>
+        <fieldset style="border-color: cadetblue ;">
+            <legend style="margin-bottom: 0px;"><h2>5</h2></legend>
+            <div style="float: left; width: 20% ; border: cadetblue ;border-style: solid;">
+            <legend style="margin-top: 1px;"><h2>CITIZENSHIP</h2></legend><br><small>(Check one)</small>
+            </div>
+            <div style="float: left; width: 40%; border: cadetblue;border-style: solid;">
+                <input type="radio" name="radioCiti"  required style="font-size: larger">U.S Citizen
+                <input type="radio" name="radioCiti"  required style="font-size: larger">Legal Alien Allowed To work<br>
+                <input type="radio" name="radioCiti"  required style="font-size: larger">Legal Alien not Allowed to Work(See Instructions on Page3)<br>
+                <input type="radio" name="radioCiti"  required style="font-size: larger">Other(See Instructions on Page3)
+            </div>
+        </fieldset>
+        <fieldset style="border-color: cadetblue ;">
+            <legend style="margin-bottom: 0px;"><h2>6</h2></legend>
+            <div style="float: left; width: 20% ; border: cadetblue;border-style: solid;">
+                <legend style="margin-top: 1px;"><h2>ETHNICITY</h2></legend>
+                <label>Are You Hispanic or Latino?Your Response is Voluntary</label>
+            </div>
+            <div style="float: left; width: 40%; border: cadetblue;border-style: solid;">
+                <input type="radio" name="ethni"  style="font-size: larger">Yes
+                <input type="radio" name="ethni"  style="font-size: larger">No
+            </div>
+        </fieldset>
+        <fieldset style="border-color: cadetblue ;">
+            <legend style="margin-bottom: 0px;"><h2>7</h2></legend>
+            <div style="float: left; width: 20% ; border: cadetblue;border-style: solid;">
+
+                <legend style="margin-top: 1px;"><h2>RACE</h2></legend>
+                <label>Select One or More</label><br><label>(your Response is Voluntary)</label>
+            </div>
+            <div style="float: left; width: 45%; border: cadetblue;border-style: solid;">
+                <input type="checkbox" name="c1"   style="font-size: larger">Native Hawaiian
+                <input type="checkbox" name="c2"   style="font-size: larger">American Indian
+                <input type="checkbox" name="c3"   style="font-size: larger">Other Pacific Islander
+                <br>
+                <input type="checkbox" name="c4"  style="font-size: larger">Alaska Native
+                <input type="checkbox" name="c5"  style="font-size: larger">Black/African American
+                <input type="checkbox" name="c6"  style="font-size: larger">White
+                <br>
+                <input type="checkbox" name="c7"  style="font-size: larger">Asian
+            </div>
+        </fieldset>
+        <fieldset style="border-color: cadetblue ;">
+            <legend style="margin-bottom: 0px;"><h2>8</h2></legend>
+            <div style="float: left; width: 20% ; border: cadetblue;border-style: solid;">
+
+                <legend style="margin-top: 1px;"><h2>SEX</h2></legend>
+            </div>
+            <div style="float: left; width: 40%; border: cadetblue;border-style: solid;">
+
+                <input type="radio" name="SEX" required style="font-size: larger">MALE
+                <input type="radio" name="SEX" required style="font-size: larger">FEMALE
+            </div>
+        </fieldset>
+        <fieldset style="border-color: cadetblue">
+            <legend><h2>9</h2></legend>
+
+            <fieldset style="border-color: cadetblue">
+
+                <h2>A. PARENT/ MOTHER'S NAME AT BIRTH</h2>
+                <label>First</label>
+                <input size="35" type="text" spellcheck="true" required name="First9A">
+
+                <label>Full Middle Name</label>
+                <input size="35" type="text" spellcheck="true" required name="fullMiddlename9A">
+
+
+                <label>Last</label>
+                <input  size="35" type="text" spellcheck="true" required name="Last9A">
+
+            </fieldset>
+
+            <fieldset style="border-color: cadetblue">
+
+                <h2>B. PARENT/ MOTHER'S SOCIAL SECURITY NUMBER</h2><br><small>(See Instructions for 9B on page 3)</small>
+                <label>First</label>
+                <input type="number" name="field1" min="0" max="9"/><input type="number" name="field2" min="0" max="9"/><input type="number" name="field3" min="0" max="9"/> <b>-</b>
+                <input type="number" name="field4" min="0" max="9"/><input type="number" name="field5" min="0" max="9"/> <b>-</b>
+                <input type="number" name="field6" min="0" max="9"/><input type="number" name="field7" min="0" max="9"/><input type="number" name="field9" min="0" max="9"/>
+                <input type="radio" name="checkbox" >Unknown</input>
+            </fieldset>
+        </fieldset>
+
+        <fieldset style="border-color: cadetblue">
+                <legend><h2>10</h2></legend>
+
+                <fieldset style="border-color: cadetblue">
+
+                    <h2>A. PARENT/ FATHER'S NAME AT BIRTH</h2>
+                    <label>First</label>
+                    <input size="35" type="text" spellcheck="true" required name="First9A">
+
+                    <label>Full Middle Name</label>
+                    <input size="35" type="text" spellcheck="true" required name="fullMiddlename9A">
+
+
+                    <label>Last</label>
+                    <input  size="35" type="text" spellcheck="true" required name="Last9A">
+                </fieldset>
+
+                <fieldset style="border-color: cadetblue">
+
+                    <h2>B. PARENT/ FATHER'S SOCIAL SECURITY NUMBER</h2><br><small>(See Instructions for 9B on page 3)</small>
+                    <label>First</label>
+                    <input type="number" name="field1" min="0" max="9"/><input type="number" name="field2" min="0" max="9"/><input type="number" name="field3" min="0" max="9"/> <b>-</b>
+                    <input type="number" name="field4" min="0" max="9"/><input type="number" name="field5" min="0" max="9"/> <b>-</b>
+                    <input type="number" name="field6" min="0" max="9"/><input type="number" name="field7" min="0" max="9"/><input type="number" name="field9" min="0" max="9"/>
+                    <input type="radio" name="checkbox" >Unknown</input>
+                </fieldset>
+        </fieldset>
+
+        <fieldset>
+                <legend><h2>11</h2></legend>
+
+            <div style="float: left; width: 40% ; border: cadetblue;border-style: solid;">
+
+                <legend style="margin-top: 1px;"><h2>Has the person listed in item 1 or anyone acting on his/her behalf ever filled for or received a Social Security number card before?</h2></legend><br><small>(Check one)</small>
+            </div>
+            <div style="float: left; width: 40%; border: cadetblue;border-style: solid;">
+                <input type="radio" name="radiofor11"  required style="font-size: larger">Yes(If "yes" answer questions 12-13)
+                <input type="radio" name="radiofor11"  required style="font-size: larger">No<br>
+                <input type="radio" name="radiofor11"  required style="font-size: larger">Don't Know(If "dont know", skip to the question 14.)<br>
+            </div>
+        </fieldset>
+
+        <fieldset style="border-color: cadetblue">
+            <legend><h2>12</h2></legend>
+            <fieldset style="border-color: cadetblue">
+
+                <h2>Name shown on the most recent Social Security card issued for the person listed in item 1</h2>
+                <label>First</label>
+                <input size="35" type="text" spellcheck="true" required name="First12">
+                <label>Full Middle Name</label>
+                <input size="35" type="text" spellcheck="true" required name="fullMiddleName12">
+                <label>Last</label>
+                <input size="35" type="text" spellcheck="true" required name="Last12">
+            </fieldset>
+        </fieldset>
+
+        <fieldset style="border-color: cadetblue">
+            <legend><h2>13</h2></legend>
+
+            <fieldset style="width: 40%;float: left;border-style:solid;border-width: medium;border-color: cadetblue;">
+                <label>Enter any different date of birth if used on an earlier application for a card</label>
+            </fieldset>
+            <fieldset style="width: 40%;float: left; border-style:solid;border-width: medium; border-color: cadetblue;">
+                <input size="15" type="date"  required name="date2">
+            </fieldset>
+
+        </fieldset>
+
+        <fieldset style="border-color: cadetblue">
+            <legend><h2>14</h2></legend>
+
+            <fieldset style="width: 40%;float: left;border-style:solid;border-width: medium; border-color: cadetblue;">
+                <label>Today's Date</label>
+            </fieldset>
+            <fieldset style="width: 40%;float: left; border-style:solid;border-width: medium; border-color: cadetblue;">
+                <label>MM/DD/YYYY</label>
+                <input size="15" type="date"  required name="date3">
+            </fieldset>
+
+        </fieldset>
+
+        <fieldset style="border-color: cadetblue">
+            <legend><h2>15</h2></legend>
+
+            <fieldset style="width: 40%;float: left;border-style:solid;border-width: medium;border-color: cadetblue;">
+                <label>DAYTIME PHONE NUMBER</label>
+            </fieldset>
+            <fieldset style="width: 40%;float: left; border-style:solid;border-width: medium;border-color: cadetblue;">
+                <label>Area Code</label>
+                <input size="15" type="tel"  pattern="[0-9]{3}" placeholder="999" required name="tel1">
+                <label>Number</label>
+                <input size="15" type="tel"  pattern="[0-9]{3}-[0-9]{4}" placeholder="999-9999" required name="tel2">
+            </fieldset>
+        </fieldset>
+
+
+        <fieldset style="border-color: cadetblue">
+            <legend><h2>16</h2></legend>
+
+            <fieldset style="width: 20%;float: left;border-style:solid;border-width: medium; border-color: cadetblue;">
+                <label>MAILING ADDRESS</label><br>
+                <label>(Do Not Abbreviate)</label>
+            </fieldset>
+            <fieldset style="width:65%;float: left; border-style:solid;border-width: medium; border-color: cadetblue;">
+                <label>Street Address, Apt No, P.O Box, Rural Route No.</label><br>
+                <input size="75" type="text"  required name="adderessLine1"><br><br>
+                <label>City</label>
+                <input size="15" type="text"  required name="adderessLine2">
+                <label>State/Foreign Country</label>
+                <input size="15" type="text"  required name="adderessLine3">
+                <label>ZIP Code</label>
+                <input size="15" type="tel" pattern="[0-9]{5}" required name="adderessLine4">
+            </fieldset>
+        </fieldset>
+
+        <fieldset style="border-color: cadetblue">
+            <legend><h2>17</h2></legend>
+
+            <fieldset style="width: 50%;float: left;border-style:solid;border-width: medium;border-color: cadetblue;">
+                <label><h3>I declare under penalty of perjury that I have examined all the information on this form, and on any accompanying statements or forms,
+                and it is true and correct to the best to my knowledge.</h3></label><br>
+
+            </fieldset>
+            <fieldset style="width: 30%;float: left; border-style:solid;border-width: medium ;border-color: cadetblue;">
+                <label>Your Signature</label>
+                <!--file input used to upload digital signature-->
+                <input type="file" id="myFile">
+            </fieldset>
+            <!--Canvas tag implemented for signature-->
+            <canvas id="myCanvas" width="240" height="40" style="border:1px solid cadetblue;">
+                Your browser does not support the HTML5 canvas tag.
+            </canvas>
+
+        </fieldset>
+
+
+        <fieldset style="border-color: cadetblue ;">
+            <legend style="margin-bottom: 0px;"><h2>18</h2></legend>
+            <div style="float: left; width: 35% ; border: cadetblue;border-style: solid;">
+                <legend style="margin-top: 1px;"><h2>YOUR RELATIONSHIP TO THE PERSON IN ITEM 1 IS:</h2></legend>
+            </div>
+            <div style="float: left; width: 60%; height: 40px; border: cadetblue;border-style: solid;">
+                <input type="radio" name="radiofor18"  required style="font-size: larger">Self
+                <input type="radio" name="radiofor18"  required style="font-size: larger">Natural or Adoptive Parent
+                <input type="radio" name="radiofor18"  required style="font-size: larger">Other
+                <input type="text" name="radiofor18"  size="10" required style="font-size: larger">
+                <label>Specify</label>
+            </div>
+        </fieldset>
+
+
+        <div style="width: 99.25%; height: 195px; margin-left: 2px;border-width: medium; border-color: black; border-style: solid;">
+        <p style="margin-bottom: 1px; margin-top: 1px;">DO NOT WRITE BELOW THIS LINE (FOR SSA USE ONLY)</p>
+
+            <div style="width: 26%; height: 25px; float: left; border-style: solid ; border-color: black ; border-width: thin">NPN</div>
+            <div style="width: 15%; height: 25px; float: left; border-style: solid ; border-color: black ; border-width: thin">DOC</div>
+            <div style="width: 14%; height: 25px; float: left; border-style: solid ; border-color: black ; border-width: thin">NTI</div>
+            <div style="width: 26%; height: 25px; float: left;border-style: solid ; border-color: black ; border-width: thin;">CAN</div>
+            <div style="width: 18.23%; height: 25px; float: left; border-style: solid ; border-color: black ; border-width: thin;">ITV</div>
+            <br>
+            <div style="width: 11.3%; height: 25px; float: left; border-style: solid ; border-color: black ; border-width: thin">PBC</div>
+            <div style="width: 11.3%; height: 25px; float: left; border-style: solid ; border-color: black ; border-width: thin">EVI</div>
+            <div style="width: 11.3%; height: 25px; float: left; border-style: solid ; border-color: black ; border-width: thin">EVA</div>
+            <div style="width: 9.42%; height: 25px; float: left;border-style: solid ; border-color: black ; border-width: thin;">EVC</div>
+            <div style="width: 11.32%; height: 25px; float: left; border-style: solid ; border-color: black ; border-width: thin;">PRA</div>
+            <div style="width: 14.3%; height: 25px; float: left; border-style: solid ; border-color: black ; border-width: thin;">NWR</div>
+            <div style="width: 14.3%; height: 25px; float: left; border-style: solid ; border-color: black ; border-width: thin;">DNR</div>
+            <div style="width: 15.52%; height: 25px; float: left; border-style: solid ; border-color: black ; border-width: thin;">UNIT</div>
+            <br>
+            <div style="width: 55.3%; height: 120px; float: left; border-style: solid ; border-color: black ; border-width: thin">EVIDENCE SUBMITTED</div>
+            <div style="width:44.39%; height: 120px; float: left; border-style: solid ; border-color: black ; border-width: thin">
+                <div style="width: 100%; height: 60px;border-style: solid ; border-color: black ; border-width: thin; margin: 0px; float: right">SIGNATURE AND TITLE OF EMPLOYEE(S) REVIEWING EVIDENCE AND/OR CONDUCTING INTERVIEW</div><br>
+                <div style="width: 100%; height: 40px; border-style: solid ; border-color: black ; border-width: thin; margin: 0px; float: right"><p style="margin:0px; text-align: right">DATE</p></div><br>
+                <div style="width: 100%; height: 17px; border-style: solid ; border-color: black ; border-width: thin; margin: 0px; float: right"><p style="margin:0px; width: 50%;text-align: left; float: left">DCL</p><p style="margin:0px; width:50%;text-align: right; float: left">DATE</p></div>
+            </div>
+
+        </div>
+        <input type="submit" name="Validate" value="Validate">
+    </form>
+
+
+
+
+
+    <!--hr tag is used for a horizontal line in a HTML page-->
+    <br>
+    <hr style="height: 4px; background: black; margin-left: 20px;margin-right: 20px;">
+    <br>
+    <!--span tag added in footer to make different blocks in a div-->
+    <footer><span  class="mainDiv" class="foot" style="margin-left: 20px;">Form <b>SS-5</b>(08-2011) ef (08-2011)</span><span class="mainDiv" class="foot">Page 5<span style="float: right" ><a href = "SSN_page4.html" target="_self"> Back </a></span></span></footer>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,894 @@
+//this page is css for all the grids in the webpage
+
+.cleaningServicesSection{
+  background-color: $greySection;
+  height: 500px;
+  position: relative;
+}
+
+//css code for grid layout
+.cleaningServices{
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(10px, auto);
+    //height: 700px;
+    margin-top: 40px;
+    margin-left: 13%;
+    margin-right: 13%;
+
+  }
+
+.one {
+  grid-column: 1 / 5;
+  grid-row: 1;
+
+  color: $basicLogoColor;
+  @include font-common;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+
+
+
+
+}
+
+//nested loops to enhance css
+
+.two {
+  grid-column: 1 ;
+  grid-row: 2;
+      .image-cellOne{
+      width: 100%;
+      height: 170px;
+      content: url("../src/images/residentialCleaning.png");
+    }
+  h3,p{
+    @include font-common;
+
+  }
+  h3{
+    color: $basicLogoColor;
+  }
+  p{
+    color: gray;
+    font-size: 13px;
+  }
+}
+.three {
+  grid-column: 2;
+  grid-row: 2;
+  .image-cellOne{
+    width: 100%;
+    height: 170px;
+    content: url("../src/images/commercialCleaning.png");
+  }
+  h3,p{
+    @include font-common;
+
+  }
+  h3{
+    color: $basicLogoColor;
+  }
+  p{
+    color: gray;
+    font-size:13px;
+  }
+}
+.four{
+  grid-column: 3;
+  grid-row: 2;
+  .image-cellOne{
+    width: 100%;
+    height: 170px;
+    content: url("../src/images/officeCleaning.png");
+  }
+  h3,p{
+    @include font-common;
+
+  }
+  h3{
+    color: $basicLogoColor;
+  }
+  p{
+    color: gray;
+    font-size:13px;
+  }
+}
+.five{
+  grid-column: 4;
+  grid-row:2;
+  .image-cellOne{
+    width: 100%;
+    height: 170px;
+    content: url("../src/images/seasonalCleaning.png");
+  }
+  h3,p{
+    @include font-common;
+
+  }
+  h3{
+    color: $basicLogoColor;
+  }
+  p{
+    color: gray;
+    font-size: 13px;
+  }
+}
+.six{
+  grid-column: 1 / 5;
+  grid-row: 3;
+  margin-top: 20px;
+}
+
+.aboutCompanyGrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0;
+  grid-auto-rows: minmax(75px, 600px);
+  margin-top: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 7%;
+}
+
+.about-cell-one{
+  grid-column: 1 ;
+  grid-row: 1;
+
+  position: relative;
+    .about-cell-one-fig{
+      content: url("../src/images/cleaningLady.png");
+      height: 100%;
+      width:100%;
+      position: absolute;
+      margin: 0;
+    }
+
+}
+
+.about-cell-two {
+  grid-column: 2;
+  grid-row: 1;
+  //border: black 1px solid;
+  @include font-common;
+  padding-left: 10px;
+
+     i{
+       color: grey;
+
+     }
+    h4{
+      color:$basicLogoColor;
+      font-size: 30px;
+      margin-top: 9px;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: small;
+      color: grey;
+    }
+
+
+}
+
+
+.smallGrid{
+
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+
+  width: 450px;
+      .smallOne{
+        grid-column: 1 / 5  ;
+        grid-row: 1;
+
+        h3{
+          text-align: center;
+          padding-right: 110px;
+          @include font-common;
+          font-size: 130%;
+          color: $basicLogoColor;
+          font-weight: 600;
+          margin-bottom: 2px;
+        }
+        p{
+          padding-left: 80px;
+          width: 80%;
+
+        }
+
+      }
+      .smallTwo{
+        grid-column: 1 / 5;
+        grid-row: 2;
+        h3{
+          text-align: center;
+          padding-right: 45px;
+          @include font-common;
+          font-size: 130%;
+          color: $basicLogoColor;
+          font-weight: 600;
+          margin-bottom: 2px;
+        }
+        p{
+          padding-left: 80px;
+          width: 80%;
+
+        }
+      }
+      .smallThree{
+        grid-column: 1 / 5;
+        grid-row: 3;
+        h3{
+          text-align: center;
+          padding-right: 30px;
+          @include font-common;
+          font-size: 130%;
+          color: $basicLogoColor;
+          font-weight: 600;
+          margin-bottom: 2px;
+        }
+        p{
+          padding-left: 80px;
+          width: 80%;
+
+        }
+      }
+}
+
+.smallCellDiv2{
+  width: 12%;
+  height:15%;
+  border: $basicLogoColor 5px solid;
+  position: absolute;
+  border-radius: 10%;
+  top:20px;
+
+}
+.questionMarkDiv2{
+
+  color: $basicLogoColor;
+  font-weight: bolder;
+  font-size: 320%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 25px;
+  left: 25px;
+  float: left;
+}
+
+.questionMarkDiv3 {
+  @include question-mark;
+  left: 25px;
+  top:25px;
+}
+
+.smallCellDiv3{
+  width: 12%;
+  height:15%;
+  border: $basicLogoColor 5px solid;
+  position: absolute;
+  border-radius: 10%;
+  margin-top: 20px;
+
+}
+
+.questionMarkDiv4 {
+  @include question-mark;
+  left: 25px;
+  top:25px;
+}
+
+.smallCellDiv4{
+  width: 12%;
+  height:15%;
+  border: $basicLogoColor 5px solid;
+  position: absolute;
+  border-radius: 10%;
+  margin-top: 20px;
+
+
+}
+
+
+.smallQGrid{
+  display: grid;
+  position: absolute;
+  width:70px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(10px, 15px);
+  //height: 700px;
+  margin-left: 140px;
+
+  @include font-common;
+  font-weight: 400;
+  color: grey;
+  text-align: center;
+  .cell-Q-1{
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 12px;
+    border: grey 1.2px solid;
+  }
+  .cell-Q-2{
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 12px;
+    border: grey 1.2px solid;
+  }
+  .cell-Q-3{
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 12px;
+    border: grey 1.2px solid;
+  }
+  .cell-Q-4{
+    grid-column: 4;
+    grid-row: 1;
+    font-size: 12px;
+    border: grey 1.2px solid;
+  }
+
+}
+
+.pricingGrid{
+  display: grid;
+  position: relative;
+  width:60%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(400px, auto);
+
+  //height: 700px;
+  margin-left: 20%;
+
+  //border:black 1px solid;
+    .pricingCell1{
+        grid-column: 1;
+        grid-row: 1;
+      background-color: white;
+      //border:black 1px solid;
+        h3{
+          @include font-common;
+          color: $basicLogoColor;
+          position: absolute;
+          top:65px;
+          left: 40px;
+          margin: 0;
+          padding: 0;
+        }
+        hr{
+          position: absolute;
+          width: 8.5%;
+          top:80px;
+          left:70px;
+          background-color: lightgray;
+          margin-top: 15px;
+        }
+        h1{
+          margin: 0;
+          padding: 0;
+          @include font-common;
+          color: rgb(123, 120, 125);
+          position: absolute;
+          top:110px;
+          left:77px;
+          width: 30px;
+        }
+        h4{
+          position: absolute;
+          margin: 0;
+          padding: 0;
+          @include font-common;
+          color: grey;
+          top: 150px ;
+          left: 77px ;
+          font-size: 14px;
+          font-weight: 400;
+        }
+        p{
+          position: absolute;
+          @include font-common;
+          color: grey;
+          font-size: 14px;
+          font-weight: 400;
+          text-align: center;
+          top:170px;
+          left:35px;
+          line-height: 30px;
+        }
+    }
+    @include hoverBorder;
+
+    .pricingCell2{
+      grid-column: 2;
+      grid-row: 1;
+      background-color: white;
+      //border:black 1px solid;
+      h3{
+        @include font-common;
+        color: $basicLogoColor;
+        position: absolute;
+        top:65px;
+        left: 275px;
+        margin: 0;
+        padding: 0;
+      }
+      hr{
+        position: absolute;
+        width: 8.5%;
+        top:80px;
+        left:300px;
+        background-color: lightgray;
+        margin-top: 15px;
+      }
+      h1{
+        margin: 0;
+        padding: 0;
+        @include font-common;
+        color: rgb(123, 120, 125);
+        position: absolute;
+        top:110px;
+        left:307px;
+        width: 30px;
+      }
+      h4{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        @include font-common;
+        color: grey;
+        top: 150px ;
+        left: 310px ;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      p{
+        position: absolute;
+        @include font-common;
+        color: grey;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        top:170px;
+        left:265px;
+        line-height: 30px;
+      }
+    }
+    .pricingCell3{
+      grid-column: 3;
+      grid-row: 1;
+      background-color: white;
+      //border:black 1px solid;
+      h3{
+        @include font-common;
+        color: $basicLogoColor;
+        position: absolute;
+        top:65px;
+        left: 495px;
+        margin: 0;
+        padding: 0;
+      }
+      hr{
+        position: absolute;
+        width: 8.5%;
+        top:80px;
+        left:526px;
+        background-color: lightgray;
+        margin-top: 15px;
+      }
+      h1{
+        margin: 0;
+        padding: 0;
+        @include font-common;
+        color: rgb(123, 120, 125);
+        position: absolute;
+        top:110px;
+        left:530px;
+        width: 30px;
+      }
+      h4{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        @include font-common;
+        color: grey;
+        top: 150px ;
+        left: 533px ;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      p{
+        position: absolute;
+        @include font-common;
+        color: grey;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        top:170px;
+        left:494px;
+        line-height: 30px;
+      }
+    }
+    .pricingCell4{
+      grid-column: 4;
+      grid-row:1;
+      background-color: white;
+      //border:black 1px solid;
+      h3{
+        @include font-common;
+        color: $basicLogoColor;
+        position: absolute;
+        top:65px;
+        left: 710px;
+        margin: 0;
+        padding: 0;
+      }
+      hr{
+        position: absolute;
+        width: 8.5%;
+        top:80px;
+        left:760px;
+        background-color: lightgray;
+        margin-top: 15px;
+      }
+      h1{
+        margin: 0;
+        padding: 0;
+        @include font-common;
+        color: rgb(123, 120, 125);
+        position: absolute;
+        top:110px;
+        left:765px;
+        width: 30px;
+      }
+      h4{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        @include font-common;
+        color: grey;
+        top: 150px ;
+        left: 765px ;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      p{
+        position: absolute;
+        @include font-common;
+        color: grey;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        top:170px;
+        left:724px;
+        line-height: 30px;
+      }
+    }
+
+}
+
+
+.pricingCellSquare{
+    width: 2%;
+    height:18px;
+    border: $basicLogoColor 3px solid;
+    position: absolute;
+    border-radius: 10%;
+    top: 20px;
+    left:95px;
+
+}
+
+.pricingCellQuestion {
+
+  color: $basicLogoColor;
+  font-weight: bolder;
+  font-size: 140%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 8px;
+  top:10px;
+  float: left;
+}
+
+.pricingCellSquare2 {
+  top:23px;
+  height: 19px;
+  left:330px;
+  //used inheritance concept in sass
+  @extend .pricingCellSquare
+
+}
+
+.pricingCellQuestion2{
+  //used inheritance concept in sass
+    @extend .pricingCellQuestion
+}
+
+.pricingCellSquare3 {
+  top:23px;
+  height: 19px;
+  left:558px;
+  @extend .pricingCellSquare
+  //used inheritance concept in sass
+
+}
+
+.pricingCellQuestion3{
+
+  @extend .pricingCellQuestion
+}
+
+.pricingCellSquare4 {
+  top:23px;
+  height: 19px;
+  left:788px;
+  @extend .pricingCellSquare
+
+}
+
+.pricingCellQuestion4{
+
+  @extend .pricingCellQuestion
+}
+
+
+.latestBlogGrid{
+    display: grid;
+    position: relative;
+    width:65%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(420px, auto);
+
+    margin-left: 18%;
+    margin-top:5%;
+    .latestBlogcell1{
+      grid-column: 1;
+      grid-row: 1;
+
+      position: relative;
+        .imageDiv{
+          border-radius: 5px;
+          position: absolute;
+          width:315px;
+          content: url("../src/images/commercialCleaning.png");
+        }
+      small{
+        position: absolute;
+        top: 230px;
+        @include font-common;
+        font-style: italic;
+        color: grey;
+        font-size: 12px;
+        font-weight: 500;
+      }
+      h4{
+        position: absolute;
+        top: 225px;
+        @include font-common;
+        color: $basicLogoColor;
+        font-size: 20px;
+        line-height: 27px;
+      }
+      p{
+        position: absolute;
+        top: 295px;
+        @include font-common;
+        color: rgb(123, 120, 125); ;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 20px;
+      }
+
+      .greyCircle{
+        position: absolute;
+        float: left;
+        top:380px;
+        border-radius: 50%;
+        height: 40px;
+        width :40px;
+        background-color: grey;
+      }
+      span{
+        position: absolute;
+        top: 390px;
+        left:60px;
+        @include font-common;
+        font-size: 13px;
+
+
+
+      }
+
+
+    }
+    .latestBlogcell2{
+      grid-column: 2;
+      grid-row: 1;
+
+      position: relative;
+      .imageDiv{
+        border-radius: 5px;
+        position: absolute;
+        width:315px;
+        height: 210px;
+        content: url("../src/images/coverPhoto.jpg");
+      }
+      small{
+        position: absolute;
+        top: 230px;
+        @include font-common;
+        font-style: italic;
+        color: grey;
+        font-size: 12px;
+        font-weight: 500;
+      }
+      h4{
+        position: absolute;
+        top: 225px;
+        @include font-common;
+        color: $basicLogoColor;
+        font-size: 20px;
+        line-height: 27px;
+      }
+      p{
+        position: absolute;
+        top: 295px;
+        @include font-common;
+        color: rgb(123, 120, 125); ;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 20px;
+      }
+
+      .greyCircle{
+        position: absolute;
+        float: left;
+        top:380px;
+        border-radius: 50%;
+        height: 40px;
+        width :40px;
+        background-color: grey;
+      }
+      span{
+        position: absolute;
+        top: 390px;
+        left:60px;
+        @include font-common;
+        font-size: 13px;
+
+
+
+      }
+    }
+   .latestBlogcell3{
+    grid-column: 3;
+    grid-row: 1;
+     position: relative;
+     .imageDiv{
+       border-radius: 5px;
+       position: absolute;
+
+       width:315px;
+       content: url("../src/images/latestBlogThree.jpg");
+     }
+     small{
+       position: absolute;
+       top: 230px;
+       @include font-common;
+       font-style: italic;
+       color: grey;
+       font-size: 12px;
+       font-weight: 500;
+     }
+     h4{
+       position: absolute;
+       top: 225px;
+       @include font-common;
+       color: $basicLogoColor;
+       font-size: 20px;
+       line-height: 27px;
+     }
+     p{
+       position: absolute;
+       top: 295px;
+       @include font-common;
+       color: rgb(123, 120, 125); ;
+       font-size: 13px;
+       font-weight: 500;
+       line-height: 20px;
+     }
+
+     .greyCircle{
+       position: absolute;
+       float: left;
+       top:380px;
+       //used number functions in scss
+       border-radius: percentage(0.5);
+       height: 40px;
+       width :40px;
+       background-color: grey;
+     }
+     span{
+       position: absolute;
+       top: 390px;
+       left:60px;
+       @include font-common;
+       font-size: 13px;
+
+
+
+     }
+    }
+
+}
+
+
+
+
+.smallQGridFoot{
+  display: grid;
+  position: absolute;
+  width:135px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 14px;
+  grid-auto-rows: minmax(10px, 15px);
+  //height: 700px;
+  margin-left:4px;
+
+  @include font-common;
+  font-weight: 400;
+  color: grey;
+  text-align: center;
+  .foot-Q-1{
+    //grid-column: 1;
+    grid-row: 1;
+    font-size: 11px;
+    font-weight: bold;
+    border: $basicLogoColor 2px solid;
+    color: $basicLogoColor;
+  }
+  .foot-Q-2{
+    //grid-column: 2;
+    grid-row: 1;
+    font-size: 11px;
+    font-weight: bold;
+    border: $basicLogoColor 2px solid;
+    color: $basicLogoColor;
+  }
+  .foot-Q-3{
+    //grid-column: 3;
+    grid-row: 1;
+    font-size: 11px;
+    font-weight: bold;
+    border: $basicLogoColor 2px solid;
+    color: $basicLogoColor;
+  }
+  .foot-Q-4{
+    //grid-column: 4;
+    grid-row: 1;
+    //used operators in css
+    font-size: 10+1px;
+    font-weight: bold;
+    border: $basicLogoColor 2px solid;
+    color: $basicLogoColor;
+  }
+  .foot-Q-5{
+    //grid-column: 5;
+    grid-row: 1;
+    font-size: 11px;
+    font-weight: bold;
+    border: $basicLogoColor 2px solid;
+    color: $basicLogoColor;
+  }
+
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/main.js | assignment-5-dhruvil7665</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/neu-mis-info6150-fall-2019/assignment-5-dhruvil7665"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/main.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">//String reversal inputs
+/**
+ *
+ * @type {string} name variable of type string that is required to be reversed
+ * @type {string} variable revname that stores the reversed string
+ */
+let name=&quot;Web Design And UX Engineering&quot;
+/**
+ *
+ * @type {string}
+ */
+let revname=reverse(name);
+console.log(&quot;The reverse of \&quot;&quot;+name+&quot;\&quot; is \&quot;&quot;+revname+&quot;\&quot;&quot;);
+//end of String reversal inputs
+
+
+
+//Start of Binary Search Inputs
+/**
+ *
+ * @type {number[]} array for Integers
+ * @type {number} type of variable x that is the element to be found
+ */
+let a = [1,2,3,4,5];
+/**
+ *
+ * @type {number}
+ */
+let x = 5;
+
+/**
+ *
+ * @type {boolean} result variable that stores the boolean result of binary search algorithm
+ */
+let result = binSearch(a,x);
+
+/**
+ * @flow if loop to print
+ */
+if(result){
+    console.log(&quot;Number &quot;+x+&quot; found in the array [&quot;+a+&quot;]&quot;);
+}
+else{
+    console.log(&quot;Number &quot;+x+&quot; not found in the array [&quot;+a+&quot;]&quot;)
+}
+//End of binary search inputs
+
+//Inputs for QuickSort
+/**
+ *
+ * @type {number[]} Array of type Numbers that needs to be sorted
+ *
+ */
+
+let sortArray = [4,7,8,9,3,6];
+console.log(&quot;Unsorted array &quot;+sortArray);
+quickSort(sortArray,0,sortArray.length-1);
+console.log(&quot;sorted Array &quot;+sortArray);
+//End of Inputs for QuickSor
+
+//Functions
+
+//Reverse
+/**
+ *
+ * @param s of type {string} that is passed on to the function from the main class which is the string to be reversed
+ * @returns {string}
+ */
+function reverse(s){
+    let result = &quot;&quot;;
+    for (let i = s.length - 1; i &gt;= 0; i--){
+        result = result + s[i];
+    }
+    return result;
+}
+
+
+//Binary search function
+/**
+ *
+ * @param a is a type {number} array that is passed to find the element
+ * @param x is a type of {number} variable
+ * @returns {boolean}
+ */
+
+function binSearch(a,x){
+    let first=0, last = a.length-1;
+    /**
+     * @flow while loop to implement the binary search algorithm
+     */
+    while(first&lt;=last){
+
+        let middle=Math.floor((first+last)/2);
+
+        if (a[middle]==x){
+            return true;
+        }
+        else if(a[middle]&lt;x){
+            first=middle+1;
+        }
+        else{
+            last = middle-1;
+        }
+
+    }
+    return false;
+}
+
+
+//Code for QuickSort
+/**
+ *
+ * @param a{number[]} of type {Array} that needs to be sorted
+ * @param first of type {Number} that is the first index of array
+ * @param last of type {Number} that is the last index of array
+ * @function quickSort is a recursive function that sorts a given array by divide and conquer method
+ */
+function quickSort(a,first,last){
+    if(first&lt;last){
+        let pIndex = part(a,first,last);
+
+        quickSort(a,first,pIndex-1);
+        quickSort(a,pIndex+1,last);
+
+    }
+}
+
+/**
+ *@function part is a function that gets the partition index by sorting array on the left and right side of the pivot
+ * @param {Array} ARRAY TO SORT USING QUICK SORT
+ * @param first{Number} FIRST INDEX OF THE ARRAY
+ * @param last of type {Number} LAST INDEX OF THE ARRAY
+ * @returns {Number} RETURNS PARTITION INDEX
+ *
+ */
+function part(a,first,last){
+    let pivot = a[last];
+    let i = first -1;
+
+    for(let j=first;j&lt;last;j++){
+        if(a[j]&lt;=pivot){
+            i++;
+            let temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+        }
+    }
+    let temp=a[i+1];
+    a[i+1]=a[last];
+    a[last]=temp;
+
+    return i+1;
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

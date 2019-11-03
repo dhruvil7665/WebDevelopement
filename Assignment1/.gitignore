@@ -1,0 +1,4 @@
+
+# Defines Files to be ignored
+.idea/*
+/.idea/

@@ -1,0 +1,16 @@
+/.idea/*
+.#*
+*~
+*#
+#*
+*.log
+*.tmp
+.DS_Store
+**/npm-cache
+/node_modules
+/tmp
+.vscode/
+.idea/workspace.xml
+dist/docs/
+/dist
+random

@@ -1,0 +1,29 @@
+@import "_variables.scss"
+@mixin font-common
+  font-family: $fontSan
+
+  //mixins created to enhance css
+@mixin question-mark
+  color: $basicLogoColor
+  font-weight: bolder
+  font-size: 320%
+  position: absolute
+  transform: translate(-50%,-50%)
+
+//made a for loop for grid in footer
+$class-slug: foot-Q !default
+
+@for $i from 1 through 5
+  .#{$class-slug}-#{$i}
+    grid-column: 0+$i
+
+
+//used each loop for on hover
+$list: Cell1 Cell2 Cell3 Cell4
+
+=hoverBorder
+  @each $num in $list
+    .pricing#{$num}:hover
+      border: $basicLogoColor 5px solid
+
+

@@ -1,0 +1,57 @@
+//this page is css for the form in the webPage
+.quote{
+  h3{
+    @include font-common;
+    color:$basicLogoColor;
+    margin-left: 60px;
+    padding-top: 20px;
+    font-weight: 800;
+  }
+}
+
+.nameBox{
+  height: 40px;
+  width: 80%;
+  @include font-common;
+  font-style: italic;
+  background-color: rgba(230, 231, 232,0.5);
+  border: 0;
+
+  margin-left: 30px;
+}
+.emailBox{
+  height: 40px;
+  width: 80%;
+  @include font-common;
+  font-style: italic;
+  background-color: rgba(230, 231, 232,0.5);
+  border: 0;
+
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.phoneBox{
+  height: 40px;
+  width: 80%;
+  @include font-common;
+  font-style: italic;
+  background-color: rgba(230, 231, 232,0.5);
+  border: 0;
+
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.messageBox{
+  height: 120px;
+  width: 80%;
+  @include font-common;
+  //font is italic
+  font-style: italic;
+  background-color: rgba(230, 231, 232,0.5);
+  border: 0;
+
+  margin-left: 30px;
+  margin-top: 20px;
+}

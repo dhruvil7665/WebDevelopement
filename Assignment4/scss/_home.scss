@@ -1,0 +1,514 @@
+//This page is to style all the sections in the webpage
+@import "mixins.sass";
+body {
+    background-color: rgba(white, 0.1);
+    margin: 0;
+  a{
+    text-decoration: none;
+    color: rgba(79, 78, 78,0.8);
+    top:-700px;
+
+  }
+}
+
+.anchor{
+  display: block;
+  height: 120px; /*same height as header*/
+  margin-top: -120px; /*same height as header*/
+  visibility: hidden;
+}
+
+
+.brandImageSection {
+    height: 650px;
+    background-color: $gradientColor;
+    /*background-image: linear-gradient(to right,$gradientColor,rgba(7,88,89,0.9));*/
+    position: relative;
+}
+.opacityImage{
+  height: 650px;
+  background-image: url("../src/images/coverPhoto.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 650px;
+  opacity: 0.3;
+
+}
+
+.brandImageSectionContentDiv{
+        width: 32%;
+        //border: black 1px solid;
+        font-size: 40px;
+        top: 20%;
+        margin-left: 300px;
+        font-family: $fontSan;
+        position:absolute;
+        font-weight: bolder;
+        height: 400px;
+        color: white;
+          P{
+            margin-bottom: 15px;
+          }
+}
+
+.lorem{
+  @include font-common;
+  font-size: 15px;
+  margin-top: 0;
+  font-weight: 100;
+}
+
+.whyChooseSection{
+  height: 500px;
+  background-color: $whiteSection;
+  /*background-image: linear-gradient(to right,$gradientColor,rgba(7,88,89,0.9));*/
+  position: relative;
+
+    h1{
+      color: $basicLogoColor;
+      @include font-common;
+      text-align: center;
+      padding-top: 60px;
+      padding-right: 20px;
+      font-size: 30px;
+    }
+
+}
+
+.whyChooseMainDiv{
+  width: 70%;
+  margin-left: 13%;
+  height: 300px;
+  //border: black 1px solid;
+
+  .outerDiv{
+    //border:black 1px solid;
+    float:left;
+    width: 33%;
+    height: 300px;
+    //margin-right: 20px;
+
+
+  }
+
+  .circleDiv{
+    border-radius: 50%;
+    height: 150px;
+    width: 45%;
+    margin-left: 28.5%;
+    margin-top: 10%;
+    position: relative;
+    background-color: $basicLogoColor;
+  }
+
+  .squareDiv{
+    height: 35%;
+    width: 35%;
+    top:30%;
+    left: 30%;
+    position: absolute;
+    border: white 3px solid;
+    border-radius: 10%;
+  }
+
+  .questionMarkDiv{
+
+    color: white;
+    font-weight: bolder;
+    font-size: 350%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 28px;
+    top:26px;
+  }
+
+  h2{
+    text-align: center;
+    margin-bottom: 0px;
+    //mixin used to include repeated code
+    @include font-common;
+    color: $basicLogoColor;
+    font-size: 140%;
+  }
+  p{
+    text-align: center;
+    @include font-common;
+    font-size: small;
+    color: grey;
+  }
+}
+
+.aboutCompanySection{
+  //variable used to give background to the section
+  background-color: $whiteSection;
+  height: 700px;
+
+
+
+}
+
+.offer{
+    background-color: $basicLogoColor;
+     height: 170px;
+     width:100%;
+      h1{
+        margin-top: 70px;
+        margin-left: 340px;
+        @include font-common;
+        color: white;
+        float: left;
+        font-weight: 500;
+      }
+   }
+
+.ourTeamSection{
+
+  height: 500px;
+  background-color: white;
+  h1{
+    color: $basicLogoColor;
+    @include font-common;
+    text-align: center;
+    padding-top: 60px;
+    padding-right: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 140px;
+    width:80%;
+  }
+}
+
+
+.teamCircleDiv1,.teamCircleDiv2,.teamCircleDiv3{
+  border-radius: 50%;
+  height: 200px;
+  width: 55%;
+  margin-left: 23%;
+  margin-top: 10%;
+  position: relative;
+
+}
+
+//css to create 3 circle of our team
+.teamCircleDiv3{
+  content: url("../src/images/dainaMason.png");
+}
+.teamCircleDiv2{
+  content: url("../src/images/jamesCawdale.jpg");
+}
+.teamCircleDiv1{
+  content: url("../src/images/josephDoe.jpg");
+}
+.teamH2{
+  margin-bottom: 4px;
+}
+
+.pricingSection {
+
+  height: 600px;
+  background-color: $greySection;
+
+  h1 {
+    color: $basicLogoColor;
+    @include font-common;
+    text-align: center;
+    padding-top: 60px;
+    padding-right: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 140px;
+    width: 80%;
+  }
+}
+
+
+.testimonialSection{
+
+  height: 550px;
+  background-color: $greySection;
+
+  h1 {
+    color: $basicLogoColor;
+    @include font-common;
+    text-align: center;
+    padding-top: 60px;
+    padding-right: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 140px;
+    width: 80%;
+
+  }
+
+  .oneCircle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    content: url("../src/images/josephDoe.jpg");
+    margin-left: 670px;
+    margin-top: 50px;
+  }
+  p{
+    @include font-common;
+    width: 40%;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 440px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 100;
+    color: $greyFont;
+  }
+  .founder{
+    width: 270px;
+    height: 25px;
+    background-color: $basicLogoColor;
+    color: white;
+    @include font-common;
+    font-style: italic;
+    padding-top: 8px;
+    margin-left: 600px;
+    text-align: center;
+    font-size: 14px;
+
+  }
+}
+
+
+
+.latestBlogSection{
+
+    height: 650px;
+    background-color: white;
+
+    h1 {
+      color: $basicLogoColor;
+      @include font-common;
+      text-align: center;
+      padding-top: 60px;
+      padding-right: 20px;
+      font-size: 30px;
+      font-weight: 600;
+      margin-left: 140px;
+      width: 80%;
+
+    }
+}
+
+
+.projectSection {
+
+  height: auto;
+  background-color: white;
+
+  h1 {
+    color: $basicLogoColor;
+    @include font-common;
+    text-align: center;
+    padding-top: 60px;
+    padding-right: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 140px;
+    width: 80%;
+
+  }
+
+  .slider{
+    width: 100%;
+    height: 250px;
+    //border: #1D4EEE 1px solid;
+    position: relative;
+    background-color: $basicLogoColor;
+    margin-top: 5%;
+      .sliderInsideOne{
+        height: 250px;
+        float:left;
+        width:24.86%;
+        position: relative;
+        //border: black 1px solid;
+        content: url("../src/images/officeCleaning.png");
+      }
+    .sliderInsideTwo{
+      height: 250px;
+      float:left;
+      width:24.86%;
+      //border: black 1px solid;
+      content: url("../src/images/commercialCleaning.png");
+    }
+
+    .sliderInsideThree{
+      height: 250px;
+      float:left;
+      width:24.86%;
+      //border: black 1px solid;
+      content: url("../src/images/residentialCleaning.png");
+    }
+    .sliderInsideFour{
+      height: 250px;
+      float:left;
+      width:25.4%;
+     // border: black 1px solid;
+      content: url("../src/images/latestBlogThree.jpg");
+    }
+
+  }
+.sliderInsideFour:hover,.sliderInsideOne:hover,.sliderInsideThree:hover,.sliderInsideTwo:hover{
+        opacity: 0.4;
+}
+
+
+
+
+  .instantParent{
+
+    background-color: grey;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+    .instant{
+
+      width: 100%;
+      height: 700px;
+      content: url("../src/images/latestBlogThree.jpg");
+      opacity: 0.5;
+    }
+
+    .quote{
+      position: absolute;
+      width:350px;
+      height: 500px;
+      background-color: white;
+      top: 40px;
+      left: 55%;
+    }
+}
+
+footer{
+  height: 250px;
+
+
+  .foot1{
+    float: left;
+    //border: black 1px solid;
+    width: 400px;
+    height: 200px;
+    padding-right: 40px;
+
+        h1{
+
+          font-family: $fontSan;
+          margin-top: 20px;
+          margin-bottom: 25px;
+
+          color: $basicLogoColor;
+          font-weight:700;
+          font-size: 27px;
+          margin-bottom: 9px;
+
+        }
+    p{
+
+      @include font-common;
+      font-size: 15px;
+      color: rgba(79, 78, 78,0.8);
+      line-height: 25px;
+      margin-top: 0;
+    }
+
+
+  }
+
+  .foot2{
+    float: left;
+    //border: black 1px solid;
+    width: 200px;
+    height: 200px;
+    h3{
+
+      font-family: $fontSan;
+      margin-top: 30px;
+
+
+      color: rgb(79, 78, 78);
+      font-weight:700;
+      font-size: 18px;
+      margin-bottom: 12px;
+
+    }
+    p{
+
+      @include font-common;
+      font-size: 15px;
+      color: rgba(79, 78, 78,0.8);
+      line-height: 25px;
+      margin-top: 0;
+    }
+  }
+  .foot3{
+    float: left;
+    //border: black 1px solid;
+    width: 200px;
+    height: 200px;
+
+    h3{
+
+      font-family: $fontSan;
+      margin-top: 30px;
+
+
+      color: rgb(79, 78, 78);
+      font-weight:700;
+      font-size: 18px;
+      margin-bottom: 12px;
+
+    }
+    p{
+
+      @include font-common;
+      font-size: 15px;
+      color: rgba(79, 78, 78,0.8);
+      line-height: 25px;
+      margin-top: 0;
+    }
+  }
+  .foot4{
+    float: left;
+    //border: black 1px solid;
+    width: 200px;
+    height: 200px;
+
+    h3{
+
+      font-family: $fontSan;
+      margin-top: 30px;
+
+
+      color: rgb(79, 78, 78);
+      font-weight:700;
+      font-size: 18px;
+      margin-bottom: 12px;
+
+    }
+    p{
+
+      @include font-common;
+      font-size: 15px;
+      color: rgba(79, 78, 78,0.8);
+      line-height: 25px;
+      margin-top: 0;
+    }
+  }
+
+  .mainfoot{
+    height: auto;
+    margin-top: 90px;
+    margin-left: 200px;
+
+  }
+
+
+
+}
+
+

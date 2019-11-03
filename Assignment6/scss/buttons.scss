@@ -1,0 +1,110 @@
+
+/*This file of scss is used to style the buttons and also styling after on-Click*/
+
+.toolsItalicsClick{
+  float: left;
+  border: black solid 1px;
+  height: 50px;
+  width: 50px;
+  margin-top:10px;
+  background-color: rgba(13,141,255,0.57);;
+  border-radius: 10%;
+  margin-right: 10px;
+
+
+}
+
+
+.toolsUnderlineClick{
+  float: left;
+  border: black solid 1px;
+  height: 50px;
+  width: 50px;
+  margin-top:10px;
+  background-color: rgba(13,141,255,0.57);;
+  border-radius: 10%;
+  margin-right: 10px;
+
+
+}
+
+
+.toolsLeftAlignClick{
+  float: left;
+  border: black solid 1px;
+  height: 50px;
+  width: 50px;
+  margin-top:10px;
+  background-color: rgba(13,141,255,0.57);
+  border-radius: 10%;
+  margin-right: 10px;
+
+
+}
+
+.toolsRightAlignClick{
+  float: left;
+  border: black solid 1px;
+  height: 50px;
+  width: 50px;
+  margin-top:10px;
+  background-color: rgba(13,141,255,0.57);;
+  border-radius: 10%;
+  margin-right: 10px;
+
+
+}
+
+.toolsJustifyClick{
+  float: left;
+  border: black solid 1px;
+  height: 50px;
+  width: 50px;
+  margin-top:10px;
+  background-color: rgba(13,141,255,0.57);;
+  border-radius: 10%;
+  margin-right: 10px;
+
+
+}
+
+.toolsCenterAlignClick{
+  float: left;
+  border: black solid 1px;
+  height: 50px;
+  width: 50px;
+  margin-top:10px;
+  background-color: rgba(13,141,255,0.57);;
+  border-radius: 10%;
+  margin-right: 10px;
+
+}
+
+.toolsCenterAlignClick:hover{
+  cursor: pointer;
+  background-color: lightblue;
+}
+
+.toolsRightAlignClick:hover{
+  cursor: pointer;
+  background-color: lightblue;
+}
+
+.toolsLeftAlignClick:hover{
+  cursor: pointer;
+  background-color: lightblue;
+}
+
+.toolsJustifyClick:hover{
+  cursor: pointer;
+  background-color: lightblue;
+}
+
+.toolsUnderlineClick:hover{
+  cursor: pointer;
+  background-color: lightblue;
+}
+.toolsItalicsClick:hover{
+  cursor: pointer;
+  background-color: lightblue;
+}
