@@ -1,0 +1,26 @@
+<!--<div id="{{'sticky-' + sticky.id}}" [class.sticky]="classObject.sticky" [style.top.px]="styleObject.top" [style.left.px]="styleObject.left">-->
+<!--  <input type="text" class="sticky-title" [attr.name]="sticky.title" [(ngModel)]="sticky.title" (keyup.enter)="stickyService.updateSticky(sticky)">-->
+<!--  <textarea type="text" class="sticky-content" [value]="sticky.content" (input)="sticky.content=$event.target.value" (keyup.enter)="stickyService.updateSticky(sticky)"></textarea>-->
+<!--  <div class="sticky-footer">{{sticky.title}} Created on: {{sticky.createdDate | date:'shortDate'}} with content {{sticky.content}}</div>-->
+<!--</div>-->
+
+<div class="todoItems">
+  <div class="todo-item-label" [ngClass]="{ 'completed' : todo.completed }">
+    <input type="checkbox" [(ngModel)]="todo.completed" (change)="todoservice.editTodo(todo)" class="todo-item-checkbox">
+   {{ todo.title }}
+  </div>
+  <div class="itemHeader">
+    <i class="far fa-edit" (click)="toggleModal()"></i>
+    <i class="far fa-trash-alt" (click)="todoListComponent.deleteTodo(todo)"></i>
+  </div>
+</div>
+<!--Below code will call the modal component-->
+<!--to-do is passed for background functionality-->
+<app-modal
+  [show]="showModal"
+  [closeCallback]="toggleModal"
+  [todo]="todo"
+>
+  <!--    <h2>Told Ya!</h2>-->
+  <!--    <iframe title="giphy" src="https://giphy.com/embed/l52CGyJ4LZPa0" width="480" height="273" frameBorder="0" className="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sandler-sentences-sounding-l52CGyJ4LZPa0">via GIPHY</a></p>-->
+</app-modal>

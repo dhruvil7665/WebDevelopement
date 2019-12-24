@@ -1,0 +1,112 @@
+//css for modal
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 990;
+}
+
+// styling for the overlay div that gives the transparency effect
+.modal .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 995;
+  background: rgba(0,0,0,0.85);
+}
+
+h4{
+  text-align: center;
+}
+
+// styling for the inputs
+.modal .modal_content {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 90%;
+  overflow: auto;
+  background: #fff;
+  padding: 20px;
+  text-align: left;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.7);
+  width: 520px; /* This just a default width */
+}
+
+.modal .modal_content > h2 {
+  font-size: 28px;
+  font-weight: 200;
+  margin: 20px 0 40px;
+  text-align: center;
+}
+
+.modal .modal_content .buttons_wrapper {
+  padding: 20px;
+}
+
+// styling for the close button
+.modal .close_modal {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0.5;
+  background: none;
+  border: none;
+  transition: opacity 0.2s ease;
+}
+
+.modal .close_modal:hover {
+  opacity: 0.9;
+}
+
+//styling for the save button
+.modal .update_modal {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  //background-color: dodgerblue;
+  background: none;
+  color: dodgerblue;
+  border: none;
+  font-family: "Comic Sans MS";
+  transition: opacity 0.2s ease;
+  margin-top: 20px;
+
+
+
+
+}
+
+.modal{
+  .modal_todoContent{
+    text-align: left;
+    border: grey 1px solid;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin-bottom: 20px;
+
+  }
+
+  //styling for the input fields of title and duedate
+  input{
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 30px;
+    width: 98.5%;
+    margin-bottom: 20px;
+    margin-left: 0px;
+
+  }
+}

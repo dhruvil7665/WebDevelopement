@@ -1,0 +1,21 @@
+<div  class="modal" [ngStyle]="{display: show ? 'block' : 'none'}">
+  <div class="overlay" (click)="closeCallback()"></div>
+  <div class="modal_content">
+    <!--Html content for modal that takes the inputs for to-do from the user-->
+    <h4>Your TODO</h4>
+    Title
+    <input [attr.disabled]="todo==undefined ? null: todo.completed ? 'disabled' : null"class="modal_title" [(ngModel)]="title" placeholder="title">
+
+    Description
+    <textarea [attr.disabled]="todo==undefined ? null: todo.completed ? 'disabled' : null"[(ngModel)]="content" class="modal_todoContent"  placeholder="Description"></textarea>
+    Due-Date
+    <input [attr.disabled]="todo==undefined ? null: todo.completed ? 'disabled' : null" type="datetime-local" placeholder="DueDate" [(ngModel)]="dateBind">
+
+    <!--save button that call the put method from service to store the data in mongoDB-->
+    <button title="Save" class="update_modal" (click)="todoUpdate()">Save</button>
+    <!--close button to close the modal/popup-->
+    <button title="Close" class="close_modal" (click)="closeCallback()">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>
